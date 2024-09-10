@@ -1,0 +1,113 @@
+/* Reset básico para remover margens e preenchimentos padrão */
+body, h1, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte personalizada e fundo escuro para um estilo gamer */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+#game {
+    width: 100%;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.hide {
+    display: none;
+}
+
+#question {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.start-btn-container, .result-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#result {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+/* Estilo para a barra de progresso */
+#progress-bar {
+    width: 100%;
+    background: #555;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#progress-bar-full {
+    height: 10px;
+    background: #4caf50;
+    width: 0%;
+    transition: width 0.4s ease;
+}
+
+/* Feedback visual para respostas */
+.correct {
+    background-image: url('images/correct.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrong {
+    background-image: url('images/wrong.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Adiciona uma animação suave de transição */
+.container, .btn {
+    transition: all 0.3s ease;
+}
+
+/* Fonte e efeitos de estilo personalizados */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
